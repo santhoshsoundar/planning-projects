@@ -31,7 +31,7 @@ const BlogIndex = ({ data, location }) => {
               </h3>
               <small>{node.frontmatter.date}</small>
               <Image
-                fixed={data.avatar.childImageSharp.fixed}
+                fixed={data.avatar.childImageSharp.fluid}
                 alt={"try"}
                 style={{
                   marginRight: rhythm(1 / 2),
