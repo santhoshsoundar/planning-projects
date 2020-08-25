@@ -1,5 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
+import './layout.css';
 
 import { rhythm, scale } from "../utils/typography"
 
@@ -30,22 +31,24 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <h3
+      <h4
         style={{
           fontFamily: `Montserrat, sans-serif`,
           marginTop: 0,
+          letterSpacing: 0.5,
+          textTransform: "none"
         }}
       >
         <Link
           style={{
-            boxShadow: `none`,
             color: `inherit`,
           }}
+          className="headerLink"
           to={`/`}
         >
-          {`< ${title}`}
+          <span style={{ color: '#007acc' }}>{`<`} {" "}</span>{title}
         </Link>
-      </h3>
+      </h4>
     )
   }
   return (

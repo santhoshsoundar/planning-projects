@@ -25,7 +25,6 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: 0,
               color: '#007acc',
               fontFamily: `Montserrat, sans-serif`,
-
             }}
           >
             {post.frontmatter.title}
