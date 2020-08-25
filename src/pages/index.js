@@ -15,33 +15,38 @@ const BlogIndex = ({ data, location }) => {
     <Layout location={location} title={siteTitle}>
       <SEO title="All posts" />
       <Bio />
+      <div className="posts">
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
+        const thumb = node.frontmatter.thumb || "avatar"
+        const location = node.frontmatter.location 
+
         return (
           <article key={node.fields.slug}>
             <header>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: rhythm(1 / 6),
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
+              <div style={{ marginBottom: rhythm(1 / 6), }}>
+                <small>
+                  {node.frontmatter.date} 
+                  <span 
+                    style={{ color: "#989898" }}
+                  >
+                    {location && " / " + location}
+                  </span>
+                </small>
+              </div> 
+              
               <Image
-                fluid={data.avatar.childImageSharp.fluid}
+                fluid={data[thumb].childImageSharp.fluid}
                 alt={"try"}
-                style={{
-                  marginRight: rhythm(1 / 2),
-                  marginBottom: 0,
-                  minWidth: 50,
-                  borderRadius: `100%`,
-                }}
-                imgStyle={{
-                  borderRadius: `50%`,
-                }}
               />
             </header>
             <section>
@@ -54,6 +59,7 @@ const BlogIndex = ({ data, location }) => {
           </article>
         )
       })}
+      </div>
     </Layout>
   )
 }
@@ -75,14 +81,58 @@ export const pageQuery = graphql`
             slug
           }
           frontmatter {
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "MMMM YYYY")
             title
+            location
             description
+            thumb
           }
         }
       }
-    }
+    } 
     avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    saratoga: file(absolutePath: { regex: "/saratoga-thumb.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    srirang: file(absolutePath: { regex: "/srirang-thumb.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tumkur: file(absolutePath: { regex: "/tumkur-thumb.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    bethle: file(absolutePath: { regex: "/bethle-thumb.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    coey: file(absolutePath: { regex: "/coey-thumb.png/" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    menan: file(absolutePath: { regex: "/menan-thumb.png/" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

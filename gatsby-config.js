@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Urban Planning Blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Karthik Soundara Rajan`,
+      summary: `who lives and works in New York practicing urban planning.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `A personal blog listing urban, regional and transportation planning project experience.`,
+    siteUrl: `https://urbplankarthik.blog/`,
     social: {
-      twitter: `kylemathews`,
+      linked: `karthiksoundar`,
     },
   },
   plugins: [

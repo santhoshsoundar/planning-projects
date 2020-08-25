@@ -1,11 +1,11 @@
 {
-  "name": "gatsby-starter-blog",
+  "name": "urban-planning-blog",
   "private": true,
-  "description": "A starter for a blog powered by Gatsby and Markdown",
+  "description": "A personal blog listing urban, regional and transportation planning project experience",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Karthik Soundara Rajan <chamzkarthik@gmail.com>",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/santhoshsoundar/planning-projects/issues"
   },
   "dependencies": {
     "gatsby": "^2.24.26",
@@ -38,15 +38,15 @@
   "devDependencies": {
     "prettier": "2.0.5"
   },
-  "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
+  "homepage": "https://github.com/santhoshsoundar/planning-projects#readme",
   "keywords": [
-    "gatsby"
+    "urban planning", "planning blog", "regional planning", "transportation planning"
   ],
   "license": "0BSD",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/santhoshsoundar/planning-projects.git"
   },
   "scripts": {
     "build": "gatsby build",

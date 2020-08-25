@@ -9,11 +9,12 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <h1
+      <h3
         style={{
-          ...scale(1.5),
-          marginBottom: rhythm(1.5),
+          ...scale(1.25),
+          marginBottom: rhythm(1.25),
           marginTop: 0,
+          fontFamily: `Montserrat, sans-serif`,
         }}
       >
         <Link
@@ -25,7 +26,7 @@ const Layout = ({ location, title, children }) => {
         >
           {title}
         </Link>
-      </h1>
+      </h3>
     )
   } else {
     header = (
@@ -42,7 +43,7 @@ const Layout = ({ location, title, children }) => {
           }}
           to={`/`}
         >
-          {title}
+          {`< ${title}`}
         </Link>
       </h3>
     )
@@ -53,15 +54,14 @@ const Layout = ({ location, title, children }) => {
         marginLeft: `auto`,
         marginRight: `auto`,
         maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        padding: `${rhythm(1.25)} ${rhythm(3 / 4)}`,
       }}
     >
       <header>{header}</header>
       <main>{children}</main>
       <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
+        <small>© {new Date().getFullYear()} All rights reserved. <a href="https://www.urbplankarthik.blog">urbplankarthik.blog</a>
+        </small>
       </footer>
     </div>
   )

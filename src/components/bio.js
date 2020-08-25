@@ -28,7 +28,7 @@ const Bio = () => {
             summary
           }
           social {
-            twitter
+            linked
           }
         }
       }
@@ -56,11 +56,14 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p style={{
+            fontSize: "14px"
+         }}        
+      >
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        <a href={`https://www.linkedin.com/in/${social.linked}`}>
+          You should connect with him on LinkedIn
         </a>
       </p>
     </div>
