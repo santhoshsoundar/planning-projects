@@ -28,3 +28,6 @@ leadership.
 [Official Press Release](https://www.albany.edu/sites/default/files/2019-11/UAlbany%20MRP%20Award%202019%20Press%20Release%20.pdf)
 
 [Official Announcement Page](https://www.albany.edu/geographyplanning/department-news)
+
+### Saratoga Springs Poster: 
+![poster](./poster.png)

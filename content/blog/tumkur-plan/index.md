@@ -1,6 +1,6 @@
 ---
 title: Tumkur Urban Infrastructure Development Plan
-location: Srirangam(10.8503° N, 78.6998° E), Tamil Nadu, India
+location: Tumkur(13.3379° N, 77.1173° E), Karnataka, India
 date: "2014-01-01T22:12:03.284Z"
 description: To understand the city dynamics and existing statutory plan under which the city functions and create a sectoral plan focused on infrastructure to be a part of the comprehensive plan.
 thumb: tumkur

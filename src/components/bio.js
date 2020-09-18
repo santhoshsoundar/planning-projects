@@ -8,6 +8,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
+import { FaLinkedin, FaUserGraduate } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
 
@@ -62,8 +63,22 @@ const Bio = () => {
       >
         Written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        <a href={`https://www.linkedin.com/in/${social.linked}`}>
-          You should connect with him on LinkedIn
+        <a 
+          href={`https://www.linkedin.com/in/${social.linked}`}
+          aria-label="linkedin social"
+          target="_blank"
+          rel="noreferrer"
+        >
+        <FaLinkedin style={{ marginBottom: "-1px", color: "#0099FF" }} /> Connect with him on LinkedIn 
+        </a>
+        {" | "}
+        <a
+          href="Karthik_Resume.pdf"
+          aria-label="final-paper"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaUserGraduate style={{ color: "#0099FF" }} /> Resume
         </a>
       </p>
     </div>

@@ -6,6 +6,7 @@ import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+import { BsBookHalf, BsAward } from "react-icons/bs";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -16,6 +17,29 @@ const BlogIndex = ({ data, location }) => {
       <SEO title="All posts" />
       <Bio />
       <div className="posts">
+      <article>
+        <header>
+          <h3
+            style={{
+              marginBottom: rhythm(1 / 6),
+            }}
+          >
+            <a
+              href="final_paper_May_15_2019.pdf"
+              aria-label="final-paper"
+              target="_blank"
+              rel="noreferrer"
+              style={{
+                boxShadow: "none"
+              }}
+            >
+              <BsBookHalf style={{ marginBottom: "-3px", color: "#0099FF"}}/>
+              {"  "}
+              Master's Research Paper - Integration of UAS Into the Airport Ecosystem
+            </a>
+          </h3>
+        </header>
+      </article>      
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         const thumb = node.frontmatter.thumb || "avatar"
@@ -30,7 +54,7 @@ const BlogIndex = ({ data, location }) => {
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
+                  {title.slice(0,3) === "APA" ? <BsAward style={{ color: "#0099FF"}} /> : ""}{"  "}{title} 
                 </Link>
               </h3>
               <div style={{ marginBottom: rhythm(1 / 6), }}>

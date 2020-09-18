@@ -13,7 +13,7 @@ Bethlehem is a large town located in Albany County in the Capital District of Ne
 For this analysis, CDRPC will look at a variety of demographic indicators including population, population density, educational attainment, economic development, building permits, and more. CDRPC will also provide maps of Bethlehem to highlight residential development for the Town identified periods of 1991-2004 and 2005-2018. 
 
 Data is drawn from a variety of sources, including Census data and data that CDRPC collects from other sources. Census data is typically retrieved from either the 10-year Decennial Census or the 5-year American Community Survey (ACS). Data from the Decennial Census are exact counts, while data from the ACS are estimates. Though the ACS data is not exact, it is useful for determining trends.
-Housing units increased by 20.4% between 1980-1990, but only increased 16% between 
+Housing units increased by 20.4% between 1980-1990, but only increased 16% between 1990 to 2000.
 
 ### Some other notable highlights from our findings include: 
 - Bethlehem’s population increased to 6,104 people between 1990 and 2010 and had a faster rate of growth than both the United States and Albany County between 2010 and 2017. Bethlehem increased by 4.2%, while Albany County increased by 1% in that time.
