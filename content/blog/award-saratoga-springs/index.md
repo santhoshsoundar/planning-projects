@@ -29,5 +29,8 @@ leadership.
 
 [Official Announcement Page](https://www.albany.edu/geographyplanning/department-news)
 
+### Award Certificate: 
+![certificate](./certificate.png)
+
 ### Saratoga Springs Poster: 
 ![poster](./poster.png)

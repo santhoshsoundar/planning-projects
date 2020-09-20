@@ -1,6 +1,7 @@
 .headerLink, .link {
     transition: 0.3s;
     box-shadow: none;
+    line-height: 1.25;
 }
 
 .headerLink:hover, .link:hover {
