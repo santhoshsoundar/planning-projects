@@ -11,6 +11,7 @@ import Image from "gatsby-image"
 import { FaLinkedin, FaUserGraduate } from "react-icons/fa"
 
 import { rhythm } from "../utils/typography"
+import "./layout.css"
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -68,8 +69,9 @@ const Bio = () => {
           aria-label="linkedin social"
           target="_blank"
           rel="noreferrer"
+          className="link"
         >
-        <FaLinkedin style={{ marginBottom: "-1px", color: "#0099FF" }} /> Connect with him on LinkedIn 
+        <FaLinkedin style={{ marginBottom: "-1px"}} className="icon"/> Connect with him on LinkedIn 
         </a>
         {" | "}
         <a
@@ -77,8 +79,9 @@ const Bio = () => {
           aria-label="final-paper"
           target="_blank"
           rel="noreferrer"
+          className="link"
         >
-          <FaUserGraduate style={{ color: "#0099FF" }} /> Resume
+          <FaUserGraduate className="icon" /> Resume
         </a>
       </p>
     </div>

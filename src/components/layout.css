@@ -1,8 +1,12 @@
-.headerLink {
+.headerLink, .link {
     transition: 0.3s;
     box-shadow: none;
 }
 
-.headerLink:hover {
+.headerLink:hover, .link:hover {
     box-shadow: 0 1px 0 0 #007acc;
+}
+
+.icon {
+    color: #0e87d8ea;
 }

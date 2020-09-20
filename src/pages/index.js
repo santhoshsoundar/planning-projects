@@ -8,6 +8,8 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import { BsBookHalf, BsAward } from "react-icons/bs";
 
+import "./../components/layout.css"
+
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
@@ -29,11 +31,9 @@ const BlogIndex = ({ data, location }) => {
               aria-label="final-paper"
               target="_blank"
               rel="noreferrer"
-              style={{
-                boxShadow: "none"
-              }}
+              className="link"
             >
-              <BsBookHalf style={{ marginBottom: "-3px", color: "#0099FF"}}/>
+              <BsBookHalf style={{ marginBottom: "-3px"}} className="icon"/>
               {"  "}
               Master's Research Paper - Integration of UAS Into the Airport Ecosystem
             </a>
@@ -53,8 +53,8 @@ const BlogIndex = ({ data, location }) => {
                   marginBottom: rhythm(1 / 6),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title.slice(0,3) === "APA" ? <BsAward style={{ color: "#0099FF"}} /> : ""}{"  "}{title} 
+                <Link className="link" to={node.fields.slug}>
+                  {title.slice(0,3) === "APA" ? <BsAward className="icon" /> : ""}{"  "}{title} 
                 </Link>
               </h3>
               <div style={{ marginBottom: rhythm(1 / 6), }}>
